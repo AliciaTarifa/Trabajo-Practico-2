@@ -21,7 +21,7 @@ public class Ejercicio_15 {
 		Random rdm = new Random();
 		
 		n = rdm.nextInt(60);
-		System.out.println("Numero:"+n);
+		System.out.println("Número: " + n);
 		
 		while(divisor<=n/2 && n%divisor!=0) {
 			divisor++;
