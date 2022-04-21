@@ -20,8 +20,9 @@ public class Ejercicio_14 {
 		int n;
 		int acumulador = 0;
 		int divisor = 2;
+		Random rdm = new Random ();
 		
-		n = new Random().nextInt(50);
+		n = rdm.nextInt(50);
 		System.out.println("Numero: " + n);
 		
 		while(divisor<=n/2) {
@@ -32,6 +33,7 @@ public class Ejercicio_14 {
 			
 			divisor++;
 		}
+		System.out.println("La suma de los divisores da: " + acumulador);
 
 	}
 
