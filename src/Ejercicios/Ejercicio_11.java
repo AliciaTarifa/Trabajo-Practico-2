@@ -3,7 +3,7 @@
  */
 package Ejercicios;
 
-import java.util.Random;
+import java.util.Scanner;
 
 /**
  * @author alicia
@@ -17,20 +17,29 @@ public class Ejercicio_11 {
 	 */
 	public static void main(String[] args) {
 		
-		Random rnd = new Random();
-		int a = rnd.nextInt(10)+1;
-		int b = rnd.nextInt(10)+1;
-		int c = rnd.nextInt(10)+1;
+		int a;
+		int b;
+		int c;
+		
+		Scanner leer =new Scanner(System.in);
+		System.out.print("Ingresar el 1° lado:");
+		a =leer.nextInt();
+		System.out.print("Ingresar el 2° lado:");
+		b =leer.nextInt();
+		System.out.print("Ingresar el 3° lado:");
+		c =leer.nextInt();
+		
 		System.out.println("Los lados del triángulo son " + a + ", " + b + ", " + c);
 		
-		if (a==b && b==c) {
-			System.out.println("El triiángulo es equilatero");
+		if(a==b && b==c) {
+			System.out.print("El triángulo es Equilatero");
 		}
-		if ((a!=b && b==c)|| (a==b && b!=c)) {
-			System.out.println("El triángulo es isóceles");
-		}
-		if (a!=b && b!=c) {
-			System.out.println("El triángulo es escaleno");
+		else {
+			if(a==b || a==c || b==c) {
+				System.out.print("El triángulo es Isósceles");
+			} else {
+				System.out.println("El triángulo es Escaleno");
+			}
 		}
 		
 		
