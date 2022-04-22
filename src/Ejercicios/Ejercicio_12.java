@@ -29,8 +29,6 @@ public class Ejercicio_12 {
 		System.out.print("Ingresar la cantidad de deportistas: ");
 		n = leer.nextInt();
 		for(int i=0; i<n;i++) {
-			//System.out.print("Ingrese el "+i+"° Edad:");
-			//edad=leer.nextInt();
 			edad=rnd.nextInt(35 - 18 +1)+18;
 			System.out.println(edad);
 			promedio=promedio+edad;
