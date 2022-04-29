@@ -43,7 +43,7 @@ public class Ejercicio_11 {
 		}
 		
 		
-		
+		leer.close();
 	}
 
 }
