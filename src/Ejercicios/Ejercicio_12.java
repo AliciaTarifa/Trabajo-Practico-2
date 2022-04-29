@@ -48,6 +48,8 @@ public class Ejercicio_12 {
 		System.out.println("Promedio de Edades:"+promedio/n);
 		System.out.println("Mayor edad ingresada:"+mayor);
 		System.out.println("Menor edad ingresada:"+menor);
+		
+		leer.close();
 
 
 	}
