@@ -26,7 +26,9 @@ public class Ejercicio_8 {
 		minutos = segundosUsuario / 60;
 		segundos = segundosUsuario % 60;
 		
-		System.out.println(segundosUsuario + " segundos equivalen a " + minutos + " minutos con " + segundos + " segundos");	
+		System.out.println(segundosUsuario + " segundos equivalen a " + minutos + " minutos con " + segundos + " segundos");
+		
+		scanner.close();
 	}
-
+	
 }
